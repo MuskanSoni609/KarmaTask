@@ -1,0 +1,25 @@
+import 'package:flutter/material.dart';
+import 'package:karmas/pages/loginpage.dart';
+import 'package:karmas/route.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      initialRoute: SplashScreenRoute,
+      routes: routes,
+      title: 'Karma',
+      debugShowCheckedModeBanner: false,
+      home: LoginPage(),
+    );
+  }
+
+  
+}
+
